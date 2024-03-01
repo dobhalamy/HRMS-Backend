@@ -1,0 +1,64 @@
+{
+  "name": "VP-V2",
+  "version": "1.0.0",
+  "description": "Backend repository for virtuevise value portal",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon start",
+    "prepare": "husky install  --only=development"
+  },
+  "lint-staged": {
+    "*.ts": "npx tsc --noEmit",
+    "*.{js,jsx,ts,tsx}": "npx eslint",
+    "*.{js,jsx,ts,tsx,html,css}": "npx prettier --write "
+  },
+  "keywords": [
+    "node",
+    "backend",
+    "virtuevise"
+  ],
+  "author": "virtuevise",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/storage-blob": "^12.17.0",
+    "axios": "^1.4.0",
+    "azure-storage": "^2.10.7",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "mongoose": "^6.6.5",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.0.0",
+    "nodemailer": "^6.9.5",
+    "nodemon": "^2.0.7",
+    "random": "^4.1.0",
+    "sequelize": "^6.28.0",
+    "socket.io": "^4.7.2",
+    "string": "^3.3.3",
+    "uuid": "^9.0.0",
+    "validator": "^13.7.0",
+    "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^4.7.1",
+    "xlsx": "^0.18.5"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "lint-staged": "^13.2.1",
+    "prettier": "^2.8.7",
+    "husky": "^8.0.0"
+  }
+}
